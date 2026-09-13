@@ -1,20 +1,11 @@
 package nl.tudelft.jpacman;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-/**
- * A simple onboarding test to verify the test setup.
- */
-public class OnboardingTest {
-
-    private static final int EXPECTED_SUM = 3;
-
-    /**
-     * Tests a simple addition.
-     */
+class OnboardingTest {
     @Test
-    public void testAddition() {
-        assertThat(1 + 2).isEqualTo(EXPECTED_SUM);
+    void arithmeticSanity() {
+        assertEquals(3, 1 + 1 + 1);
     }
 }
